@@ -532,14 +532,19 @@ a {
 }
 
 .portfolio-section {
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .list-button {
-  /*display: flex;
-  justify-content: center;*/
-  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*justify-content: center;*/
+  margin-bottom: 40px;
+  /*margin-bottom: 50px;*/
 }
 
 .list-button__button {
@@ -567,6 +572,7 @@ a {
 
 .list-button__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .work-list {
@@ -575,8 +581,8 @@ a {
   list-style: none;
   /*display: flex;
   flex-wrap: wrap;*/
-  margin-top: -30px;
-  margin-left: -30px;
+  /*margin-top: -30px;
+  margin-left: -30px;*/
 }
 
 .work-list__item {
@@ -584,6 +590,9 @@ a {
       flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .work-list__link {
