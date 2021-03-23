@@ -307,18 +307,21 @@ a {
   }
 }
 
-/*padding-top: 200px;
-  padding-bottom: 200px;*/
 .hero__heading {
   color: var(--text-fone);
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
-  /*font-size: 44px;*/
-  /*line-height: 1.36;*/
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .hero__heading {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__botton {
@@ -709,19 +712,6 @@ a {
   background-color: var(--moz-background-hero-foter-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    max-width: 768px;
-    margin: auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer {
-    max-width: 1600px;
-  }
 }
 
 .footer__container {

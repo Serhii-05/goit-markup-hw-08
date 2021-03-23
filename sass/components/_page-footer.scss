@@ -2,14 +2,6 @@
   background-color: var(--moz-background-hero-foter-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media (min-width: 768px) {
-    max-width: 768px;
-    margin: auto;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 1600px;
-  }
 
   &__container {
     text-align: center;
