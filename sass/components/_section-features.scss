@@ -1,4 +1,6 @@
 .features {
+  padding-top: 60px;
+  padding-bottom: 60px;
   /*padding-top: 94px;
   padding-bottom: 94px;*/
 }
@@ -7,7 +9,8 @@
   /*display: flex;
   justify-content: space-between;*/
 
-  text-align: left;
+  text-align: center;
+  /*text-align: left;*/
 }
 
 .features-list :not(:last-child) {
@@ -15,17 +18,18 @@
 }
 
 .features-list__item {
+  margin-bottom: 30px;
   /*margin-left: 30px;*/
 }
 
 .features-list__container {
   background-color: var(--button-background-color);
-  /*margin-bottom: 30px;*/
+  margin-bottom: 30px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
 }
 
@@ -35,6 +39,8 @@
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .features-list__text {
