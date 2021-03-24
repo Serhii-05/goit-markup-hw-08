@@ -6,14 +6,14 @@
   &__container {
     text-align: center;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       align-items: baseline;
       flex-wrap: nowrap;
@@ -23,7 +23,7 @@
 }
 
 .container-address {
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
@@ -38,7 +38,7 @@
 
 .logo-type {
   margin-bottom: 4px;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
   }
 }
@@ -50,20 +50,20 @@
 
 .footer-address__list {
   margin-bottom: 60px;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
 
 .footer-address__item {
   margin-bottom: 8px;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
 
 .footer-address__item:last-child {
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
@@ -73,7 +73,7 @@
 
   color: var(--text-fone);
   margin-bottom: 8px;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
@@ -90,7 +90,7 @@
 
 .social-container {
   margin-bottom: 60px;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
@@ -108,7 +108,7 @@
 .social-list {
   display: flex;
   justify-content: center;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
 
@@ -141,7 +141,7 @@
 }
 
 .footer-form {
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
@@ -157,7 +157,7 @@
 }
 
 .footer-form__container {
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
   }
@@ -166,11 +166,11 @@
 .footer-form__input {
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
   }
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -185,7 +185,7 @@
   padding-left: 16px;
 
   margin-bottom: 20px;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
@@ -208,7 +208,7 @@
   border: none;
 
   padding: 10px 28px;
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 12px;
   }
 
