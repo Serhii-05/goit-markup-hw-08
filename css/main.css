@@ -502,34 +502,60 @@ a {
 
 .team {
   background-color: var(--button-background-color);
-  /*padding-bottom: 94px;
-  padding-top: 94px;*/
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team__heading {
   color: var(--heading-text-color);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  /*margin-bottom: 50px;*/
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__heading {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .list-icon {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 16px;
 }
 
 .list-icon__item:not(:last-child) {
-  /*margin-right: 10px;*/
+  margin-right: 10px;
 }
 
 .list-icon__link {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 44px;
   height: 44px;
   color: var(--link-color);
@@ -548,18 +574,78 @@ a {
   fill: currentColor;
 }
 
-.team-list {
-  /*display: flex;
-  justify-content: space-between;*/
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.team-list__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.team-list__thumb {
+  height: 460px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__thumb {
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__thumb {
+    height: 260px;
+  }
+}
+
+.team-list__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team-list__container {
   background-color: var(--text-fone);
-  /*text-align: center;*/
-  /*padding: 30px 32px;*/
+  text-align: center;
+  padding: 30px 122px 24px 122px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__container {
+    padding: 30px 74px 24px 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__container {
+    padding: 30px 32px;
+  }
 }
 
 .team-list__name {
@@ -573,25 +659,55 @@ a {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.18;
-  /*margin-top: 10px;*/
+  margin-top: 10px;
 }
 
 .client {
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client__heading {
-  font-size: 36px;
-  line-height: 1.16;
-  /*text-align: center;*/
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
   color: var(--heading-text-color);
-  /*margin-bottom: 50px;*/
+}
+
+@media screen and (min-width: 1200px) {
+  .client__heading {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .client-list {
-  /*display: flex;
-  justify-content: space-between;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .client-list__link {
@@ -604,7 +720,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   color: var(--link-color);
   border: 1px solid var(--link-color);
@@ -613,9 +729,35 @@ a {
   transition: border 250ms var(--cubic), color 250ms var(--cubic);
 }
 
+@media screen and (min-width: 768px) {
+  .client-list__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list__link {
+    width: 170px;
+  }
+}
+
 .client-list__link:hover, .client-list__link:focus {
   color: var(--link-button-blue-color);
   border: 1px solid var(--link-button-blue-color);
+}
+
+.client-list__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .client-list__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .client-list__icon {
@@ -670,17 +812,21 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  /*display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*
   flex-wrap: wrap;*/
   /*margin-top: -30px;
   margin-left: -30px;*/
 }
 
 .work-list__item {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  /*margin-left: 30px;
+  margin-top: 30px;*/
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
