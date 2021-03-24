@@ -28,8 +28,9 @@
   }
 }
 
-.box-logo {
+.logo-type__box {
   margin-right: 0;
+  padding: 0;
 }
 
 .logo-fot {
@@ -37,10 +38,7 @@
 }
 
 .logo-type {
-  margin-bottom: 4px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .footer-address {
@@ -63,9 +61,7 @@
 }
 
 .footer-address__item:last-child {
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
 }
 
 .footer-address__maps {
