@@ -36,6 +36,14 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+            <div class="container-menu">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="24" >
+                        <use href="./images/icons.svg#mobile-open"></use>
+                    </svg>
+                    
+                </button>
+            </div>
         </div>
     </header>
     <!--Main-->
@@ -121,7 +129,9 @@
         <ul class="team-list">
             <li class="team-list__item">
                 <div class="team-list__thumb">
-                <img class="team-list__image" src="images/img.jpg" alt="foto-Igor Demyanenko" width="270"/>
+                <img class="team-list__image" srcset="images/img.jpg 1x, images/img@2x.jpg 2x" src="images/img.jpg" alt="foto-Igor Demyanenko" 
+                loading="lazy"
+                />
             </div>
                 <div class="team-list__container">
                     <h3 class="team-list__name">Игорь Демьяненко</h3>
@@ -162,7 +172,9 @@
             </li>
             <li class="team-list__item">
                 <div class="team-list__thumb">
-                    <img class="team-list__image" src="images/img(1).jpg" alt="foto-Olga Repina" width="270"/>
+                    <img class="team-list__image"
+                    srcset="images/img(1).jpg 1x, images/img(1)@2x"
+                     src="images/img(1).jpg" alt="foto-Olga Repina" loading="lazy"/>
                 </div>
                 <div class="team-list__container">
                     <h3 class="team-list__name">Ольга Репина</h3>
@@ -202,7 +214,9 @@
                 </li>
             <li class="team-list__item">
                 <div class="team-list__thumb">
-                    <img class="team-list__image" src="images/img(2).jpg" alt="foto-Nikolay Tarasov" width="270"/>
+                    <img class="team-list__image" 
+                    srcset="images/img(2).jpg 1x, images/img(2)@2x.jpg 2x"
+                    src="images/img(2).jpg" alt="foto-Nikolay Tarasov" loading="lazy"/>
                 </div>
                 <div class="team-list__container">
                     <h3 class="team-list__name">Николай Тарасов</h3>
@@ -244,7 +258,9 @@
                 </li>
             <li class="team-list__item">
                 <div class="team-list__thumb">
-                     <img class="team-list__image" src="images/img(3).jpg" alt="foto-Mikhail Ermakov" width="270"/>
+                     <img class="team-list__image"
+                     srcset="images/img(3).jpg 1x, images/img(3)@2x.jpg 2x"
+                      src="images/img(3).jpg" alt="foto-Mikhail Ermakov" loading="lazy"/>
                     </div>
                 <div class="team-list__container">
                     <h3 class="team-list__name">Михаил Ермаков</h3>
@@ -401,6 +417,34 @@
             </form>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+           <svg width="24" height="24">
+               <use href="./images/icons.svg#mobile-close"></use>
+           </svg>
+        </button>
+    <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__current">Студия </a>
+        </li>
+        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио </a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты </a></li>
+    </ul>
+    
+    <ul class="mobile-contacts">
+        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+                
+                info@devstudio.com</a></li>
+        <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link">
+                
+                +38 096 111 11 11</a></li>
+    </ul>
+        <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">LinkedIn</a></li>
+        </ul>
+    </div>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 
@@ -468,6 +512,10 @@
                 </form>
             </div>
         </div>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script defer src="js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>

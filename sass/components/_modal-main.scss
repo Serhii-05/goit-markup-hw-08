@@ -1,12 +1,17 @@
 .modal {
-  min-height: 521px;
-  min-width: 528px;
+  height: 609px;
+  width: 450px;
   background-color: var(--text-fone);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic);
+
+  @media screen and(min-width: 1200px) {
+    min-height: 521px;
+    min-width: 528px;
+  }
 
   &__button {
     position: absolute;
@@ -148,11 +153,18 @@
 }
 
 .checkbox__label {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 
   color: var(--text-color);
   cursor: pointer;
-  padding-left: 23px;
+  padding-left: 20px;
+
+  @media screen and(min-width: 1200px) {
+    padding-left: 23px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {
@@ -170,7 +182,8 @@
 
   position: absolute;
   top: 50%;
-  left: 13px;
+  left: 0;
+  /*left: 13px;*/
   transform: translateY(-50%);
 }
 
