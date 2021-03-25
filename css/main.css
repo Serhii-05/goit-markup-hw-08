@@ -1311,13 +1311,18 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  overflow-y: scroll;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms var(--cubic);
   transition: -webkit-transform 250ms var(--cubic);
   transition: transform 250ms var(--cubic);
   transition: transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (min-width: 1200px) {
