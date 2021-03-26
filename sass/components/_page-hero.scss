@@ -82,13 +82,17 @@
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @media screen and(max-width:480px) {
+    font-size: 21px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 30px;
 }
 
 .hero__botton {

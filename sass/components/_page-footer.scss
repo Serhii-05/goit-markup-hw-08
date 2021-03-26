@@ -23,6 +23,7 @@
 }
 
 .container-address {
+  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -47,7 +48,6 @@
 }
 
 .footer-address__list {
-  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -97,8 +97,10 @@
 }
 
 .social-head {
-  font-weight: bold;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--text-fone);
@@ -149,7 +151,10 @@
 
 .footer-form__text {
   font-weight: bold;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--text-fone);

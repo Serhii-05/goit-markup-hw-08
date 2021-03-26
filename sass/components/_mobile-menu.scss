@@ -12,6 +12,17 @@
   border: none;
   border-radius: 50%;
   outline: none;
+
+  top: 10px;
+  right: 10px;
+}
+
+.container-menu {
+  margin-left: auto;
+}
+
+.menu-toggle__close {
+  position: absolute;
 }
 
 @media (min-width: 768px) {
@@ -22,17 +33,25 @@
 
 .menu-container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
   background-color: rgb(255, 255, 255);
+
   z-index: 999;
   overflow-y: scroll;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
+  @media screen and(max-width:480px) {
+    padding: 48px 83px 48px 0;
+  }
 
   @media screen and(min-width:480px) {
     padding: 48px 83px 48px 40px;
@@ -51,19 +70,6 @@
 .mobile-icon:focus {
   color: var(--link-button-blue-color);
   transition: color 250ms var(--cubic);
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.menu-container {
-  color: #fff;
-}
-
-.mobile-menu {
 }
 
 .mobile-menu__item:not(:last-child) {
@@ -120,6 +126,11 @@
   justify-content: space-between;
 }
 
+.mobile-soc__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+/*transform: rotate(90deg);*/
 .mobile-soc__link {
   font-weight: 500;
   font-size: 18px;
