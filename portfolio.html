@@ -33,6 +33,14 @@
                 </svg>
                 +38 096 111 11 11</a></li>
     </ul>
+    <div class="container-menu">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#mobile-open"></use>
+            </svg>
+    
+        </button>
+    </div>
         </div>
         </header>
     <main>
@@ -318,32 +326,34 @@
     </div>
 </footer>
 <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
+    <button class="menu-toggle menu-toggle__close js-close-menu">
         <svg class="mobile-icon" width="24" height="24">
             <use href="./images/icons.svg#mobile-close"></use>
         </svg>
     </button>
     <ul class="mobile-menu">
-        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Студия </a>
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link ">Студия </a>
         </li>
         <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__current">Портфолио </a></li>
         <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты </a></li>
     </ul>
+    <div>
+        <ul class="mobile-contacts">
 
-    <ul class="mobile-contacts">
-        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+            <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link">
 
-                info@devstudio.com</a></li>
-        <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link">
+                    +38 096 111 11 11</a></li>
+            <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__link">
 
-                +38 096 111 11 11</a></li>
-    </ul>
-    <ul class="mobile-soc">
-        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Instagram</a></li>
-        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Twitter</a></li>
-        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Facebook</a></li>
-        <li class="mobile-soc__item"><a class="mobile-soc__link" href="">LinkedIn</a></li>
-    </ul>
+                    info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-soc">
+            <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Instagram</a></li>
+            <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Twitter</a></li>
+            <li class="mobile-soc__item"><a class="mobile-soc__link" href="">Facebook</a></li>
+            <li class="mobile-soc__item"><a class="mobile-soc__link" href="">LinkedIn</a></li>
+        </ul>
+    </div>
 </div>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
