@@ -660,22 +660,10 @@ a {
 .team-list__container {
   background-color: var(--text-fone);
   text-align: center;
-  padding: 30px 122px 24px 122px;
+  padding: 30px 32px 30px 32px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-list__container {
-    padding: 30px 74px 24px 74px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-list__container {
-    padding: 30px 32px;
-  }
 }
 
 .team-list__name {
@@ -1125,6 +1113,12 @@ a {
 
 .social-container {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-container {
+    margin-bottom: 102px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
