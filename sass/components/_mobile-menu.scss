@@ -26,13 +26,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 83px 48px 40px;
+
   background-color: rgb(255, 255, 255);
   z-index: 999;
   overflow-y: scroll;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
+  @media screen and(min-width:480px) {
+    padding: 48px 83px 48px 40px;
+  }
 }
 
 .menu-container.is-open {

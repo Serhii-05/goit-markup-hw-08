@@ -1593,7 +1593,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 48px 83px 48px 40px;
   background-color: white;
   z-index: 999;
   overflow-y: scroll;
@@ -1603,6 +1602,12 @@ a {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+@media screen and (min-width: 480px) {
+  .menu-container {
+    padding: 48px 83px 48px 40px;
+  }
 }
 
 .menu-container.is-open {
