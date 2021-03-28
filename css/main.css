@@ -220,6 +220,7 @@ a {
 
 .contacts-list__item:not(:last-child) {
   padding-top: 21px;
+  margin-bottom: 10px;
 }
 
 .contacts-list__item:last-child {
@@ -1081,6 +1082,7 @@ a {
 @media screen and (min-width: 1200px) {
   .container-address {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
